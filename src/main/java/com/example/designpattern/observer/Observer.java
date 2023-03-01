@@ -1,4 +1,4 @@
-package com.example.designpattern.chapter2;
+package com.example.designpattern.observer;
 
 public interface Observer {
     public void update(float temp, float humidity, float pressure);

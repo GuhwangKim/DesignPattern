@@ -1,6 +1,7 @@
-package com.example.designpattern.chapter2;
+package com.example.designpattern.observer;
 
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
+    // weather data 로 부터 변경사항을 받기 위해서 Observer를 구현함
     private float temperature; //필드
     private float humidity;
     private WeatherData weatherData;

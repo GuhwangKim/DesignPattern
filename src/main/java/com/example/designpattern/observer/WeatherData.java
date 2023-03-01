@@ -1,4 +1,4 @@
-package com.example.designpattern.chapter2;
+package com.example.designpattern.observer;
 
 
 import java.util.ArrayList;
@@ -36,6 +36,10 @@ public class WeatherData implements Subject {
         this.temperature = temperature;
         this.humidity = humidity;
         this.pressure = pressure;
-        //measurementsChanged();
+        measurementsChanged();
+    }
+
+    private void measurementsChanged() {
+        notifyObservers();
     }
 }
